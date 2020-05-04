@@ -1,0 +1,30 @@
+{
+  "name": "scrapercarrefour",
+  "version": "1.0.0",
+  "description": "Scrapes the list of all carrefour locations in France",
+  "main": "index.js",
+  "scripts": {
+    "locations": "node locations.js",
+    "gmaps": "node screenshots.js",
+    "scrape": "npm run locations && npm run gmaps",
+    "start": "concurrently \"http-server\" \"open http://localhost:8080\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:jlengrand/carrefour.git"
+  },
+  "private": true,
+  "author": "Julien Lengrand-Lambert <julien@lengrand.fr>",
+  "license": "CC-NC-ND",
+  "dependencies": {
+    "concurrently": "^3.5.1",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "http-server": "^0.12.1",
+    "lowdb": "^1.0.0",
+    "path": "^0.12.7",
+    "puppeteer": "^1.20.0",
+    "query-string": "^6.0.0",
+    "usng": "^0.1.2"
+  }
+}
