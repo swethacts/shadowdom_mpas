@@ -134,5 +134,5 @@ async function closeBrowser(browser) {
 //Url Intialization 
 (async () => {
 	await gmaps("https://www.google.com/maps/@17.416192,78.462976,12z");
-	process.exit(1);
+	//process.exit(1);
 })();
